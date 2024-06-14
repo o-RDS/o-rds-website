@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "o-rds-website",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
