@@ -1,12 +1,14 @@
 ---
 import { Image } from "astro:assets";
-import logo from "../images/ords.png";
+import logo from "../images/ords_lg.png";
+import githubLogo from "../images/githubLogo.png";
+import logoRDS from "../images/ords.svg";
 ---
 
-<nav class="flex" />
-    <Image src={logo} alt="logo"/>
-    <div class="ml-auto">
-        <a>Documentation</a>
-        <a>Github</a>
+<nav class="flex flex-row w-screen items-center justify-center border">
+    <Image src={logo} alt="logo" class="w-24 h-auto"/>
+    <div class="flex flex-row ml-auto w-auto gap-6 pr-3 justify-center items-center">
+        <a href="/getting-started/overview">Documentation</a>
+        <a href="https://github.com/o-RDS"><Image src={githubLogo} alt="Github Logo" class="w-8 h-auto"/></a>
     </div>
 </nav>
