@@ -2,20 +2,26 @@
 interface Props {
 	title: string;
 	body: string;
+	image: string;
+	benefits: String[];
 }
 
-const { title, body } = Astro.props;
+const { title, body, image } = Astro.props;
+import { Image } from 'astro:assets';
 ---
 
 <li class="link-card">
-	<div class="text-center bg-rdsOrange">
-		<img src="" />
+	<div class="border-4 border-rdsBlue">
+		<Image src={import(image)} alt="" />
 		<h2 class="text-2xl font-bold m-0">
 			{title}
 		</h2>
 		<p class="text-base">
 			{body}
 		</p>
+		<ul>
+
+		</ul>
 	</div>
 </li>
 <style>
@@ -25,9 +31,7 @@ const { title, body } = Astro.props;
 		padding: 1px;
 		/* background-color: #23262d; */
 		background-image: none;
-		background-size: 400%;
 		border-radius: 7px;
-		background-position: 100%;
 		/* transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1); */
 	}
@@ -37,7 +41,7 @@ const { title, body } = Astro.props;
 		line-height: 1.4;
 		padding: calc(1.5rem - 1px);
 		border-radius: 8px;
-		color: white;
+		color: black;
 		opacity: 0.8;
 	}
 	p {

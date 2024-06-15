@@ -4,6 +4,9 @@ import ReasonsCard from '../components/ReasonsCard.astro';
 import FeatureCard from '../components/FeatureCard.astro';
 import { Image } from 'astro:assets';
 import logo from "../images/ords.png";
+import easyToUse from "../images/easy.png";
+import openSource from "../images/open_source.png";
+import modular from "../images/modular.png";
 ---
 
 <Layout title="o-RDS">
@@ -14,7 +17,7 @@ import logo from "../images/ords.png";
 				<p class="instructions">
 					o-RDS delivers a highly customizable, open-source, and easy to set up way to conduct your own online RDS surveys.
 				</p>
-				<div>
+				<div class="flex gap-10">
 					<a href="/getting-started/overview"><button class="border-rdsOrange border-2 p-2 rounded-md bg-rdsOrange text-white">View the docs</button></a>
 					<a href="https://github.com/o-RDS"><button class="border-rdsBlue border-2 p-2 rounded-md">Check out Github</button></a>
 				</div>
@@ -24,59 +27,81 @@ import logo from "../images/ords.png";
 			</div> -->
 		</section>
 		<section class="mt-20 md:mt-24 lg:mt-28">
-			<h2 class="text-3xl">o-RDS is a all-in-one online RDS solution.</h2>
+			<h2 class="text-5xl text-center">An all-in-one online RDS solution.</h2>
 			<ul role="list" class="flex justify-between mt-4 sm:mt-8">
 				<ReasonsCard
 					title="Open Source"
 					body="o-RDS provides a completely open source solution allowing for budget use cases and continued community support."
+					image="../images/open_source.png"
 				/>
 				<ReasonsCard
 					title="Easy to Use"
 					body="o-RDS provides a no frills solution to web RDS. Simply plug in the necessary parts and it'll work right out of the box."
+					image="../images/easy.png"
 				/>
 				<ReasonsCard
 					title="Customizable"
 					body="Build o-RDS the way you want it to work. Change out or expand on parts to make it better fit your workflow."
+					image="../images/modular.png"
 				/>
-				<ReasonsCard
+				<!-- <ReasonsCard
 					title="Fast"
 					body="Build o-RDS the way you want it to work. Change out or expand on parts to make it better fit your workflow."
-				/>
+					image="../images/open_source.png"
+				/> -->
 			</ul>
 		</section>
 		<section class="mt-20 md:mt-24 lg:mt-28">
-			<h2 class="text-3xl">Fully Featured</h2>
-			<p class="mt-3 text-base">o-RDS contains all the necessary features to start building your survey right away and supports continuous integration of new features.</p>
-			<ul role="list" class="link-card-grid mt-4 sm:mt-8">
-				<FeatureCard
+			<h2 class="text-5xl text-center">Fully Featured</h2>
+			<p class="mt-3 text-base text-center">o-RDS contains all the necessary features to start building your survey right away and supports continuous integration of new features.</p>
+			<section class="mt-16 md:mt-20 lg:mt-24">
+				<h3 class="text-4xl">Administrator</h3>
+				<p>The experience of an adminstrator has been expertly crafted in order to provide tools you'll actually use and nothing more.</p>
+				<ul role="list" class="flex flex-wrap mt-4 sm:mt-8">
+					<FeatureCard
 					title="Survey Builder"
 					body="Develop your survey with a simple and fast survey builder."
+					image="../images/modular.png"
 				/>
 				<FeatureCard
 					title="Survey Management"
 					body="Easily manage surveys straight from the survey builder or view your results right in the dashboard."
+					image="../images/modular.png"
 				/>
-				<FeatureCard
+				</ul>
+			</section>
+			<section class="mt-16 md:mt-20 lg:mt-24">
+				<h3 class="text-4xl">Developer</h3>
+				<p>The plug and play nature of o-RDS provides ease of use for developers getting this project running.</p>
+				<ul role="list" class="link-card-grid mt-4 sm:mt-8">
+					<FeatureCard
+					title="Backend Proxy Survey"
+					body="Keep your secrets hidden and enable authentification of users wihe the included proxy server."
+					image="../images/modular.png"
+				/>
+				</ul>
+			</section>
+			<section class="mt-16 md:mt-20 lg:mt-24">
+				<h3 class="text-4xl">Automation</h3>
+				<p>o-RDS takes the tedium out of RDS surveys with automated tasks.</p>
+				<ul role="list" class="link-card-grid mt-4 sm:mt-8">
+					<FeatureCard
 					title="Referal Tracking"
 					body="Easily track the chain of referals and spend more time doing meaningful work."
+					image="../images/modular.png"
 				/>
 				<FeatureCard
 					title="Automatic Payments"
 					body="With Tremendous integration, all payments will be handled automatically."
+					image="../images/modular.png"
 				/>
 				<FeatureCard
 					title="Survey Delivery Tool"
 					body="Publish your survey and it will automatically go live at its own dedicated URL."
+					image="../images/modular.png"
 				/>
-				<FeatureCard
-					title="Backend Proxy Survey"
-					body="Keep your secrets hidden and enable authentification of users wihe the included proxy server."
-				/>
-				<FeatureCard
-					title="Security"
-					body="Build o-RDS the way you want it to work. Change out or expand on parts to make it better fit your workflow."
-				/>
-			</ul>
+				</ul>
+			</section>
 		</section>
 	</main>
 </Layout>
@@ -133,8 +158,10 @@ import logo from "../images/ords.png";
 	}
 	.link-card-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		justify-content: center;
 		gap: 2rem;
 		padding: 0;
+		max-width: 100%;
 	}
 </style>
