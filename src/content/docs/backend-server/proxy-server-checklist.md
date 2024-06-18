@@ -18,7 +18,7 @@ Below is a step-by-step guide detailiing how to setup o-RDS to work your selecte
 
 Go to [Tremendous.com](https://www.tremendous.com/) and create an account. Tremendous requires you to use a "business email domain only." Once you have created an account, move on to step 1. 
 
-![Tremendous Sign Up](../photos/Tremendous_signup.jpg "Tremendous home page")
+<!-- ![Tremendous Sign Up](../photos/Tremendous_signup.jpg "Tremendous home page") -->
 
 Don't worry about adding funds just yet. Tremendous has a wonderful development environment called "Testflight", which will be of great use. 
 
@@ -32,13 +32,13 @@ Click [HERE](https://developers.tremendous.com/docs/sandbox-environment) to get 
 
 Campaign templates will allow you to select which rewards you want to make available to your recepients, as well as design the look of the message your recepients receive. Below shows you how to navigate to create a campaign template. 
 
-![Tremendous Create Campaign](../photos/Tremendous_Create_Campaign.jpg "Tremendous Create Campaign")
+<!-- ![Tremendous Create Campaign](../photos/Tremendous_Create_Campaign.jpg "Tremendous Create Campaign") -->
 
 # Tremendous Step 3: Get your Bearer Token
 
 Bearer tokens are what Tremendous uses to authorize API calls. It is important that these keys remain secret. If you ever accidentaly expose your API key, be sure to quickly create a new one and remove any use of the old key from o-RDS. More information on what to do with this key is detailed in step 4. 
 
-![Tremendous API Keys](../photos/Tremendous_API_Keys.jpg "Tremendous API Keys")
+<!-- ![Tremendous API Keys](../photos/Tremendous_API_Keys.jpg "Tremendous API Keys") -->
 
 # Tremendous Step 4: Set Up Environment Variables
 
@@ -63,15 +63,15 @@ These docs outline how to get a Tremendous account working with o-RDS. For detai
 
 Go to [Twilio.com](https://www.twilio.com/?g=%2F) and create your account. Once you've verified your email and phone number, you'll end up at Twilio's console (below). Here you'll find your Account SID and Auth Token. You'll need these in the following steps. 
 
-![Twilio Console](../photos/Twilio_Console.jpg "Twilio Console")
+<!-- ![Twilio Console](../photos/Twilio_Console.jpg "Twilio Console") -->
 
 # Twilio Step 1: Buy a Twilio Phone Number
 
 o-RDS does not use Twilio's verification service. Instead, we use a phone number and send verification texts on our own. You'll need to purchase a phone number with Twilio. To do this, follow the steps below. 
 
-![Twilio Phone Number](../photos/Twilio_Phone_Number.jpg "Twilio Phone Number")
+<!-- ![Twilio Phone Number](../photos/Twilio_Phone_Number.jpg "Twilio Phone Number")
 
-![Twilio Phone Number 2](../photos/Twilio_Phone_Number_2.jpg "Twilio Phone Number 2")
+![Twilio Phone Number 2](../photos/Twilio_Phone_Number_2.jpg "Twilio Phone Number 2") -->
 
 Take a note of the phone number you choose, as you'll need this in setting up your environment variables (step 2).
 
