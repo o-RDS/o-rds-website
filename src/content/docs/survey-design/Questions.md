@@ -1,5 +1,5 @@
 ---
-title: Questions
+title: The Basic Questions
 ---
 
 # Questions

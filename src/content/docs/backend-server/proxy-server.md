@@ -1,5 +1,5 @@
 ---
-title: proxy server
+title: Setting Up the Proxy Server
 ---
 
 # o-RDS Proxy Server
@@ -16,7 +16,7 @@ This server uses admin and survey taker data as a way of signing and verifying J
 ### 1: Set up incentive payment and phone verification service accounts
 The current version of o-RDS utilizes two services for this process: Tremendous for incentive payments, and Twilio for phone verification. It will require anyone who wants their own version of o-RDS to create accounts with these services, and configure their API keys to work with this server. 
 
-[Use our separate docs on how to set up these accounts](./routes), then return here. 
+[Use our separate docs on how to set up these accounts](../getting-started/api-keys.md), then return here. 
 
 ### 2: Set up the database 
 
