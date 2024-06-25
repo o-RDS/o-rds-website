@@ -8,7 +8,7 @@ export default defineConfig({
   integrations: [
     tailwind(),
     starlight({
-      title: "o-RDS doc site",
+      title: "o-RDS Docs",
       sidebar: [
         {label: 'Getting Started', 
           autogenerate: {directory: 'getting-started'},
