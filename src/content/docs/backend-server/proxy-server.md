@@ -7,16 +7,16 @@ title: Setting Up the Proxy Server
 This is the proxy server for the [o-RDS web app client](https://github.com/o-RDS/o-rds-web-app). This server is meant to provide integrity and confidentiality to both user data and to the API secrets. 
 
 
-### Authentication and Authorization
-This server uses admin and survey taker data as a way of signing and verifying JWTs (JSON web tokens), so we can be sure the people trying to access our endpoints are properly authorized/verified users. For admins we save their email and password ([salted and hashed](./controllers/admin.auth.controller.js)), while for survey takers we save their phone number and the 6-digit code that was texted to them ([hashed with SHA256](./controllers//survey.auth.controller.js)).
+## Authentication and Authorization
+This server uses admin and survey taker data as a way of signing and verifying JWTs (JSON web tokens), so we can be sure the people trying to access our endpoints are properly authorized/verified users. For admins we save their email and password salted and hashed, while for survey takers we save their phone number and the 6-digit code that was texted to them hashed with SHA256.
 
 
-# Setup Checklist
+## Setup Checklist
 
 ### 1: Set up incentive payment and phone verification service accounts
 The current version of o-RDS utilizes two services for this process: Tremendous for incentive payments, and Twilio for phone verification. It will require anyone who wants their own version of o-RDS to create accounts with these services, and configure their API keys to work with this server. 
 
-[Use our separate docs on how to set up these accounts](../getting-started/api-keys.md), then return here. 
+[Use our separate docs on how to set up these accounts](/getting-started/api-keys), then return here. 
 
 ### 2: Set up the database 
 
@@ -43,4 +43,4 @@ There may be a number of settings/variables in the .envf file that are set a spe
 4. Though not necessary, it is a good idea to generate a new JWT_API_SECRET
 
 [comment]: <> (This will be where we can link to the OpenAPI spec document)
-# Endpoints
+## Endpoints

@@ -1,5 +1,7 @@
 ---
-title: The Survey Builder
+title: The Survey Editor
+sidebar: 
+    order: 1
 ---
 
 # Survey Builder (***User***)
@@ -7,7 +9,7 @@ title: The Survey Builder
 ## Basics
 o-RDS comes with a `Survey Builder` in order to create your surveys. It is a powerful tool that makes it easy to build the perfect survey for you. The `Survey Builder` contains quite a few features in order to help you achieve that. Let's dive into how the `Survey Builder` works.
 
-***If you are a developer, documentation related to implementing new features can be found here***
+***If you are a developer, documentation related to implementing new features can be found [here](survey-update.md)***
 
 ## Survey Builder Structure
 The `Survey Builder` consists of 5 main parts. These parts are: the questions preview, the question settings sidebar, the survey settings, the top status bar, and the publish modal. Each of these parts serve an important role in make the `Survey Builder` run.
@@ -32,52 +34,24 @@ All changes to a question from the sidebar are done in realtime and are instant.
 ### The Status Bar
 `The Status Bar` (Shown at the top of the page, beneath the main navigation) provides a quick overview as to the status of your survey as well as providing navigation to the results page of your survey. `The Status Bar` contains the following items: `Survey Name`, `Save Button`, `Settings Button`, `Survey Status`, `Survey Results Button`, and `Publish Button`. 
 
-### Survey Settings
-The `Survey Settings` is where you will adjust the (mostly) unseen parts of the survey. There are 6 categories of settings and they include `General`, `Appearance`, `Contact`, `Informed Consent`, `Tremendous` and `Referral`. Each category controls a different aspect of the survey, giving you a lot of control over it. 
-
-#### General
-The General Settings contain the most basic settings for a survey. The settings include the following:
-
-***Survey Name*** - Place for you to edit the name of your survey
-
-***Researcher Message*** - Place to edit the introductory message your survey has
-
-***End of Survey Message*** - Place to edit the message that was shown once a survey has been completed. 
-
-***Add Admin*** - Use this to add an admin to a survey. Adding an admin will allow that person to view and edit the survey.
-
-#### Appearance
-The appearance settings allow you to edit the primary and accent colors for your survey. The settings include the following:
-
-***Primary Color*** - Edit the primary color for your survey
-
-***Accent Color*** - Edit the accent color for your survey
-
-#### Contact
-The contact settings allow you to edit the contact information that is found in the contact menu within a survey. The settings include the following:
-
-***Phone Number*** - Edit the primary phone number a researcher can be reached at regarding questions about the survey
-
-***Email*** - Edit the email address a researcher can be reached at regarding questions about the survey
-
-***Mailing Address*** - Edit the mailing address a researcher can be reached at regarding questions about the survey
-
-#### Informed Consent
-The informed consent settings allow you to edit the message and items displayed on the informed consent page. The settings include the following:
-
-***Informed Consent Message*** - Edit the message you want shown as you consent to a survey
-
-***Informed Consent Requirements*** - Edit the message to convey Informed connsent reqiorements to a participant
-
-#### Tremendous
-The Tremendous settings allow you to edit which funding source you'll be using and what campaign you are using. The settings include the following:
-
-***Funding Source*** - Edit which funding source you want to use to pay for referral payments
-
-***Campaign*** - Edit which campaign you want to use in order to add flair to your payments
-
-#### Referral
-
-
-
 ### Publish Modal
+
+When you are ready tl publish your survey, you can click the publish button in the top right of the survey builder. This will bring up the publishing modal. Here you will be able to publish the survey as well as pause the survey when needed
+
+This modal presents a quick overview of the settings in your survey. There are two required items in order to publish a survey:
+
+- ***Title*** - This is the title of your survey
+- ***A least one question*** - This ensures you have at least one question
+
+If either one of the above requirements are not met, the publish button will be grayed out and you will be unable to publish that survey.
+
+The following are items that aren't required but are recommended:
+
+- ***A Researcher Message*** - This is a message typically used for an informed consent.
+- ***End of survey message*** - This message is helpful for thanking particpants and providing further instructions.
+- ***Researcher Phone Number*** - This is used in the contact button in a live survey. Without it particpants may have trouble contacting you with questions or concerns.
+- ***Email*** - This is used in the contact button in a live survey. Without it particpants may have trouble contacting you with questions or concerns.
+- ***Mail*** - This is used in the contact button in a live survey. Without it particpants may have trouble contacting you with questions or concerns.
+
+
+

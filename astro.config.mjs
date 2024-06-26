@@ -22,6 +22,12 @@ export default defineConfig({
         {label: 'Admin Dashboard', 
           autogenerate: {directory: 'admin-dashboard'},
         },
+        {
+          label: 'The Survey Builder',
+          autogenerate: {
+            directory: 'survey-builder'
+          },
+        }
       ]
     }),
   ],

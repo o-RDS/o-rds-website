@@ -1,5 +1,7 @@
 ---
 title: The Basic Questions
+sidebar: 
+  order: 2
 ---
 
 # Questions
