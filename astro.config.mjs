@@ -13,21 +13,15 @@ export default defineConfig({
         {label: 'Getting Started', 
           autogenerate: {directory: 'getting-started'},
         },
-        {label: 'Survey Design', 
-          autogenerate: {directory: 'survey-design'},
-        },
         {label: 'Backend Server', 
           autogenerate: {directory: 'backend-server'},
+        },
+        {label: 'Survey Design', 
+          autogenerate: {directory: 'survey-design'},
         },
         {label: 'Admin Dashboard', 
           autogenerate: {directory: 'admin-dashboard'},
         },
-        {
-          label: 'The Survey Builder',
-          autogenerate: {
-            directory: 'survey-builder'
-          },
-        }
       ]
     }),
   ],
