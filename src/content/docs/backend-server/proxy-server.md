@@ -72,4 +72,3 @@ There may be a number of settings/variables in the .envf file that are set a spe
 4. Though not necessary, it is a good idea to generate a new JWT_API_SECRET
 
 [comment]: <> (This will be where we can link to the OpenAPI spec document)
-## Endpoints

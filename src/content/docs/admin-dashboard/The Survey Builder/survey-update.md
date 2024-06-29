@@ -53,5 +53,5 @@ In any component that modifies the a survey's configuration you will find a func
 
 There is only one required value in the object that you pass using the dispatch function: `type`. `Type` is required for the reducer to know what action should be completed. Without it you will get errors. Otherwise you can name any other fields you would like to dispatch.
 
-For more information about how the reducer works in conjunction with context, React provides great documentation ([here](https://react.dev/learn/scaling-up-with-reducer-and-context))
+For more information about how the reducer works in conjunction with context, React provides great documentation [here](https://react.dev/learn/scaling-up-with-reducer-and-context).
 

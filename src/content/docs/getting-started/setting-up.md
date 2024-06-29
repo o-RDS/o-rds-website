@@ -12,7 +12,7 @@ To start using o-RDS first start by forking both the [client](https://github.com
 
 ## 2. Setting Up the Proxy Server & Database
 
-o-RDS comes with a built proxy server. All you need to do is add your API keys for use with Twilio and Tremendous, create and connect your database, and ensure all routes in the client lead to the server. Please note: o-RDS comes with Firebase integration. If you decide to use another No-SQL database you may have to reconfigure some APIs in order for them to work. The guide to setting up the proxy server can be found [here](/backend-server/proxy-server).
+o-RDS comes with a built-in proxy server. All you need to do is add your API keys for use with Twilio and Tremendous, create and connect your database, and ensure all routes in the client lead to the server. Please note: o-RDS comes with Firebase integration. If you decide to use another No-SQL database you may have to reconfigure some APIs in order for them to work. The guide to setting up the proxy server can be found [here](/backend-server/proxy-server).
 
 ## 3. Deploying the applications
 
