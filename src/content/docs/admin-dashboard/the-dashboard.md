@@ -1,5 +1,7 @@
 ---
 title: The admin dashboard
+sidebar:
+    order: 1
 ---
 
 # The Admin Dashboard

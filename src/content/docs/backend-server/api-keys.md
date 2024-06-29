@@ -1,5 +1,7 @@
 ---
 title: Aquiring Third-Party API Keys
+sidebar: 
+    order: 2
 ---
 
 # Incentive Payment and Phone Verification Setup

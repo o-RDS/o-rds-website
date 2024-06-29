@@ -1,5 +1,7 @@
 ---
 title: Setting Up the Proxy Server
+sidebar: 
+    order: 1
 ---
 
 # o-RDS Proxy Server
@@ -19,6 +21,33 @@ The current version of o-RDS utilizes two services for this process: Tremendous 
 [Use our separate docs on how to set up these accounts](/getting-started/api-keys), then return here. 
 
 ### 2: Set up the database 
+
+o-RDS requires a No-SQL database to work correctly. Any database that supports collections and subcollections will work. o-RDS comes with Firebase integrated but you will need to set up the database. Your database should follow the following schema in order for it to work correctly.
+
+| Main Collection | Document     | Subcollection                             | Document       | Data                         |
+|---------------|--------------|-------------------------------------------|----------------|------------------------------|
+| Responses     | `<Survey ID>`  | Incentives                                | `<hashed phone>` | `<number>` claimedReferrals    |
+|               |              |                                           |                | `<boolean>` completionClaimed  |
+|               |              |                                           |                | `<boolean>` isComplete         |
+|               |              |                                           |                | `<number>` successfulReferrals |
+| ->            | ->           | Survey Results                            | <responseID>   | `<number>` alias               |
+|               |              |                                           |                | `<object>` answers             |
+|               |              |                                           |                | `<boolean>` completed          |
+|               |              |                                           |                | `<number>` depth               |
+|               |              |                                           |                | `<string>` parentID            |
+|               |              |                                           |                | `<string>` responseID          |
+|               |              |                                           |                | `<number>` statusCode          |
+
+| Main Collection | Document     | Data                                      |               
+|---------------|--------------|---------------------------------------------|
+| Surveys       | `<surveyID>`   | `<SurveyConfig>`                            |                
+| Users         | `<user email>` | `<string>` email                            |                
+|               |              | `<string>` fullname                         |                
+|               |              | `<string>` password (password is encrypted) |                
+|               |              | `<string>` role                             |                
+|               |              | `<array of strings>` surveys                |                
+
+
 
 
 ### 3: Configure .env file

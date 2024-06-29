@@ -1,7 +1,7 @@
 ---
 title: Survey Settings
 sidebar:
-    order: 2
+    order: 3
 ---
 
 The `Survey Settings` is where you will adjust the (mostly) unseen parts of the survey. There are 6 categories of settings and they include `General`, `Appearance`, `Contact`, `Informed Consent`, `Tremendous` and `Referral`. Each category controls a different aspect of the survey, giving you a lot of control over it. 

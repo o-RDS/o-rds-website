@@ -1,10 +1,10 @@
 ---
 title: The Survey Editor
 sidebar: 
-    order: 1
+    order: 2
 ---
 
-# Survey Builder (***User***)
+# Survey Builder
 
 ## Basics
 o-RDS comes with a `Survey Builder` in order to create your surveys. It is a powerful tool that makes it easy to build the perfect survey for you. The `Survey Builder` contains quite a few features in order to help you achieve that. Let's dive into how the `Survey Builder` works.
