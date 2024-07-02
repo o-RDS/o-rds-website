@@ -12,11 +12,11 @@ The schema for surveys provide a clear and consitent structure for all surveys. 
 
 | Field             | Type            | Description                                                                        | Default Value                                                                     |
 |-------------------|-----------------|------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| id                | String          | The unique ID for the survey.                                                      | A unique string generated using uuidv4                                            |
+| id                | String          | The unique ID for the survey                                                      | A unique string generated using uuidv4                                            |
 | title             | String          | The title of a survey                                                              | "Untitled Survey"                                                                 |
 | admins            | List of Strings | A list of emails of the persons who have access to the survey                      | []                                                                                |
 | live              | Boolean         | The current publication state of the survey                                        | false                                                                             |
-| completionPayout  | Number          | The amount that is paid out for a participant who completes the survey.            | 0.0                                                                               |
+| completionPayout  | Number          | The amount that is paid out for a participant who completes the survey            | 0.0                                                                               |
 | refPayout         | Number          | The amount paid out to a participant who successfully referred another participant | 0.0                                                                               |
 | maxRefs           | Number          | The maximum amount of successful referrals a participant can make                  | 0                                                                                 |
 | maxRefIncentives  | Number          | The maximum amount of times a participant can be paid for successful referrals     | 0                                                                                 |

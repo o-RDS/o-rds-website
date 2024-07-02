@@ -10,11 +10,11 @@ The `Survey Settings` is where you will adjust the (mostly) unseen parts of the 
 
 The General Settings contain the most basic settings for a survey. The settings include the following:
 
-***Survey Name*** - Place for you to edit the name of your survey
+***Survey Name*** - This is a place for you to edit the name of your survey.
 
-***Researcher Message*** - Place to edit the introductory message your survey has
+***Researcher Message*** - This is a place lace to edit the introductory message your survey has.
 
-***End of Survey Message*** - Place to edit the message that was shown once a survey has been completed. 
+***End of Survey Message*** - This is a place to edit the message that was shown once a survey has been completed.
 
 ***Add Admin*** - Use this to add an admin to a survey. Adding an admin will allow that person to view and edit the survey.
 
@@ -42,7 +42,7 @@ The informed consent settings allow you to edit the message and items displayed 
 
 ***Informed Consent Message*** - Edit the message you want shown as you consent to a survey
 
-***Informed Consent Requirements*** - Edit the message to convey Informed connsent reqiorements to a participant
+***Informed Consent Requirements*** - Edit the message to convey informed consent requirements to a participant
 
 ## Tremendous
 
@@ -56,9 +56,9 @@ The Tremendous settings allow you to edit which funding source you'll be using a
 
 The referral settings allow you to edit the fine-grained details of how your referrals will work. The settings include the following:
 
-***Maximum Paid Referrals*** - Edit the maximum number of referrals someone can be paid for making
+***Maximum Paid Referrals*** - Edit the maximum number of referrals someone can be paid for
 
-***Maximum Referrals*** - edit the mximum number of referrals someone can give
+***Maximum Referrals*** - Edit the maximum number of referrals someone can give
 
 ***Completion Amount*** - Edit the amount rewarded for completing the survey
 

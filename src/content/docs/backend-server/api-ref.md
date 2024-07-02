@@ -70,7 +70,7 @@ sidebar:
 
 ***surveyID*** - The unique identifier for a survey ID
 
-#### Required Body Fields**
+#### Required Body Fields
 
 ***surveyData*** - Contains the survey configuration object
 
@@ -141,8 +141,11 @@ sidebar:
 
 #### Required Body Fields
 ***surveyID*** - Contains the ID of a survey
+
 ***alias*** - Contains the alias associated with the response
+
 ***responseData*** - Contains a particpants responses
+
 ***parentHash*** - Contains the hash of the parent to track referral chains
 
 | Response Code | Message                         |
@@ -291,7 +294,7 @@ sidebar:
 
 ***denomination*** - Contains the amount that will be paid out
 
-***recipient*** - An object that contains a recipients name and email
+***recipient*** - An object that contains a recipient's name and email
 
 ***method*** - Contains the method in which a recipient will recieve their payout
 
@@ -313,7 +316,7 @@ sidebar:
 
 #### Required Body Fields
 
-***to*** - Contains a particpants phone number and sends their OTP code
+***to*** - Contains a particpant's phone number and sends their OTP code
 
 | Response Code | Message                                                                |
 |---------------|------------------------------------------------------------------------|
@@ -328,7 +331,7 @@ sidebar:
   
 #### Required Body Fields
 
-***to*** - Contains a particpants phone number
+***to*** - Contains a particpant's phone number
 
 ***code*** - Contains the code entered by a participant
 

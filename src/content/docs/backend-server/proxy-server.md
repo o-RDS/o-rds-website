@@ -16,13 +16,13 @@ This server uses admin and survey taker data as a way of signing and verifying J
 ## Setup Checklist
 
 ### 1: Set up incentive payment and phone verification service accounts
-The current version of o-RDS utilizes two services for this process: Tremendous for incentive payments, and Twilio for phone verification. It will require anyone who wants their own version of o-RDS to create accounts with these services, and configure their API keys to work with this server. 
+The current version of o-RDS utilizes two services for this process: Tremendous for incentive payments, and Twilio for phone verification. It will require anyone who wants their own version of o-RDS to create accounts with these services and configure their API keys to work with this server. 
 
-[Use our separate docs on how to set up these accounts](/getting-started/api-keys), then return here. 
+[Use our separate docs on how to set up these accounts](/backend-server/api-keys), then return here. 
 
 ### 2: Set up the database 
 
-o-RDS requires a No-SQL database to work correctly. Any database that supports collections and subcollections will work. o-RDS comes with Firebase integrated but you will need to set up the database. Your database should follow the following schema in order for it to work correctly.
+o-RDS requires a No-SQL database to work correctly. Any database that supports collections and subcollections will work. o-RDS comes with Firebase integrated, but you will need to set up the database. Your database should follow the following schema in order for it to work correctly.
 
 | Main Collection | Document     | Subcollection                             | Document       | Data                         |
 |---------------|--------------|-------------------------------------------|----------------|------------------------------|
@@ -64,7 +64,7 @@ How to start this server
 This is an ExpressJS application, so there are many ways it can be hosted and publicly accessible by the [admin client](https://github.com/o-RDS/o-rds-web-app). The o-RDS team used [Railway](https://railway.app/) and we followed [this tutorial](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/deployment). 
 
 ### 5: Moving to a production environment
-There may be a number of settings/variables in the .envf file that are set a specific way during development/testing. Use the checklist below once you're ready to move to a production envrionment. 
+There may be a number of settings/variables in the .env file that are set a specific way during development/testing. Use the checklist below once you're ready to move to a production envrionment. 
 
 1. TESTING=false
 2. TREMENDOUS_BEARER_TOKEN and TREMENDOUS_SERVER shoud not be using the testflight environment

@@ -8,7 +8,7 @@ sidebar:
 
 ## Survey configuration
 
-Each survey has its own configuration file. The survey builder and live survey both use this to build and edit surveys. The survey builder utilizes React context and a reducer in order to easily update portions of the survey. Without the reducer you would have to write specific code for each setting to be change and then pass it up through several components just to ensure the survey builder is updating in realtime and the configuration is being accurately updated. This documentation describes the best practices for utilizing the updater.
+Each survey has its own configuration file. The survey builder and live survey both use this to build and edit surveys. The survey builder utilizes React context and a reducer in order to easily update portions of the survey. Without the reducer, you would have to write specific code for each setting to be changed and then pass it up through several components just to ensure the survey builder is updating in realtime and the configuration is being accurately updated. This documentation describes the best practices for utilizing the updater.
 
 ## Understanding the Updater
 
@@ -39,9 +39,9 @@ error: "",
 
 A couple things to note regarding the fields:
 
-***Survey***: This field represents the complete survey configuration. You should make this field have the value of the most updated survey configuration. If a particular action didn't result in the configuration being altered you can set this to tasks['survey']. If the updated survey configuration was passed in such as in the `initialize` action, then set equal to the `action.survey` value. Finally, if you use a local variable to update the survey, set the field equal to `<yourVariable>['survey']`.
+***Survey***: This field represents the complete survey configuration. You should make this field have the value of the most updated survey configuration. If a particular action didn't result in the configuration being altered, you can set this to tasks['survey']. If the updated survey configuration was passed in such as in the `initialize` action, then set equal to the `action.survey` value. Finally, if you use a local variable to update the survey, set the field equal to `<yourVariable>['survey']`.
 
-***Question***: This field represents the question you are currently editing. You should make this field have the value of the question you have most recently edited. If a particular action didn't result in the question you are currently editing to be changed you can set this to tasks['question']. Otherwise, you should pass the index of the newest question you are editing. This field is only changed when a question is added, selected or deleted all of which are covered with currently implmented cases so you shouldn not have to ever worry about this field.
+***Question***: This field represents the question you are currently editing. You should make this field have the value of the question you have most recently edited. If a particular action didn't result in the question you are currently editing to be changed you can set this to tasks['question']. Otherwise, you should pass the index of the newest question you are editing. This field is only changed when a question is added, selected or deleted all of which are covered with currently implemented cases so you should not have to ever worry about this field.
 
 ***Change***: This field indicates whether any changes have taken place since it was last saved. It is best to not pass this in through a dispatch and instead set it to `true` or `false` when returning the object from the reducer.
 
@@ -49,7 +49,7 @@ A couple things to note regarding the fields:
 
 ### The Dispatch Function
 
-In any component that modifies the a survey's configuration you will find a function dedicated to that change. Within that function will be a dispatch function. This dispatch function takes any changes that you give it and passes it to the reducer function. When creating functions that utilize this function we reccommend that you make the changes to a local copy of the survey configuration, then use that in the dispatch. 
+In any component that modifies a survey's configuration you will find a function dedicated to that change. Within that function will be a dispatch function. This dispatch function takes any changes that you give it and passes it to the reducer function. When creating functions that utilize this function we reccommend that you make the changes to a local copy of the survey configuration, then use that in the dispatch. 
 
 There is only one required value in the object that you pass using the dispatch function: `type`. `Type` is required for the reducer to know what action should be completed. Without it you will get errors. Otherwise you can name any other fields you would like to dispatch.
 

@@ -10,4 +10,4 @@ o-RDS is a brand new tool focusing on streamlining web RDS surveys. It has been 
 
 ## Demoing o-RDS
 
-o-RDS is stored on Github [here](https://github.com/o-RDS). The organization page contains two repositories, the client and the proxy server. The client is the frontend of the application and proxy server acts as the backend providing authentication and security for the client. o-RDS can be demoed at [o-RDS.com](https://o-rds.com/register). To demo the product register for an account and then log in. From there you can explore the software as much as you need.
+o-RDS is stored on Github [here](https://github.com/o-RDS). The organization page contains two repositories, the client and the proxy server. The client is the frontend of the application and proxy server acts as the backend providing authentication and security for the client. o-RDS can be demoed at [o-RDS.com](https://o-rds.com/admin/register). To demo the product, register for an account and then log in; from there, you can explore the software as much as you need.

@@ -6,7 +6,7 @@ sidebar:
 
 # Incentive Payment and Phone Verification Setup
 
-For incentive payment methods, o-RDS currently suports:
+For incentive payment methods, o-RDS currently supports:
 
     Tremendous
 
@@ -32,7 +32,7 @@ Click [HERE](https://developers.tremendous.com/docs/sandbox-environment) to get 
 
 ## Tremendous Step 2: Create a Campaign
 
-Campaign templates will allow you to select which rewards you want to make available to your recepients, as well as design the look of the message your recepients receive. Below shows you how to navigate to create a campaign template. 
+Campaign templates will allow you to select which rewards you want to make available to your recepients, as well as design the look of the message your recepients receive. Below shows you how to navigate to create a campaign template:
 
 ![Tremendous Create Campaign](../../../assets/images/Tremendous_Create_Campaign.jpg "Tremendous Create Campaign")
 
@@ -44,7 +44,7 @@ Bearer tokens are what Tremendous uses to authorize API calls. It is important t
 
 ## Tremendous Step 4: Set Up Environment Variables
 
-Environment variables are used to keep secrets from being used as plaintext within the codebase. Envrionment files contain the key-value pairs that are associated with the secrets that need to be used in the code. o-RDS provides an empty environment variable file with only the keys ([.env.development](../.env.development)), and all you need to do is get your values and fill out the file. Once .env.development is filled out with values, change the name to "**.env**" and gitignore will ignore it upon the next commit. 
+Environment variables are used to keep secrets from being used as plaintext within the codebase. Envrionment files contain the key-value pairs that are associated with the secrets that need to be used in the code. o-RDS provides an empty environment variable file with only the keys, and all you need to do is get your values and fill out the file. Once .env.development is filled out with values, change the name to "**.env**" and gitignore will ignore it upon the next commit. 
 
 In the case of Tremendous, the only values required in the .env file are: 
 
