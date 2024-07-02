@@ -1,7 +1,7 @@
 ---
 title: The admin dashboard
 sidebar:
-    order: 1
+  order: 1
 ---
 
 # The Admin Dashboard
@@ -10,7 +10,7 @@ The admin dashboard gives a quick overview of your current surveys. Once you log
 
 ## The Survey Tiles
 
-The survey tiles shown upon loading the admin dashboard contain the survey name, its publication status, and the option to edit or view the results of the survey. Clicking the edit button will bring up the survey builder for that survey. Clicking on the tile itself will take you to the results for the survey. You can change how many surveys are displayed on a page by selecting from 5, 10, or 25 at the top of the page. 
+The survey tiles shown upon loading the admin dashboard contain the survey name, its publication status, and the option to edit or view the results of the survey. Clicking the edit button will bring up the survey builder for that survey. Clicking on the tile itself will take you to the results for the survey. You can change how many surveys are displayed on a page by selecting from 5, 10, or 25 at the top of the page.
 
 ## The Results page
 

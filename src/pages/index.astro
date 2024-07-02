@@ -1,8 +1,8 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import ReasonsCard from '../components/ReasonsCard.astro';
-import FeatureCard from '../components/FeatureCard.astro';
-import { Image } from 'astro:assets';
+import Layout from "../layouts/Layout.astro";
+import ReasonsCard from "../components/ReasonsCard.astro";
+import FeatureCard from "../components/FeatureCard.astro";
+import { Image } from "astro:assets";
 import logo from "../images/ords.png";
 import easyToUse from "../images/easy.png";
 import openSource from "../images/open_source.png";
@@ -10,218 +10,280 @@ import modular from "../images/modular.png";
 ---
 
 <Layout title="o-RDS">
-	<main class="flex flex-col gap-10">
-		<section class="flex">
-			<div class="flex flex-col items-center mt-16 md:mt-20 lg:mt-24 mx-auto">
-				<h1 class="m-0 md:text-6xl text-3xl">The new way to to conduct online RDS surveys.</h1>
-				<p class="instructions text-base md:text-xl max-w-[660px]">
-					o-RDS delivers a highly customizable, open-source, and easy to set up way to conduct your own online RDS surveys.
-				</p>
-				<div class="flex md:flex-row flex-col gap-10">
-					<a href="/getting-started/overview"><button class="border-rdsOrange border-2 p-2 rounded-md bg-rdsOrange text-white text-base">View the docs</button></a>
-					<a href="https://github.com/o-RDS"><button class="border-rdsBlue border-2 p-2 rounded-md text-base">Check out Github</button></a>
-				</div>
-			</div>
-			<!-- <div>
+  <main class="flex flex-col gap-10">
+    <section class="flex">
+      <div class="flex flex-col items-center mt-16 md:mt-20 lg:mt-24 mx-auto">
+        <h1 class="m-0 md:text-6xl text-3xl">
+          The new way to to conduct online RDS surveys.
+        </h1>
+        <p class="instructions text-base md:text-xl max-w-[660px]">
+          o-RDS delivers a highly customizable, open-source, and easy to set up
+          way to conduct your own online RDS surveys.
+        </p>
+        <div class="flex md:flex-row flex-col gap-10">
+          <a href="/getting-started/overview"
+            ><button
+              class="border-rdsOrange border-2 p-2 rounded-md bg-rdsOrange text-white text-base"
+              >View the docs</button
+            ></a
+          >
+          <a href="https://github.com/o-RDS"
+            ><button class="border-rdsBlue border-2 p-2 rounded-md text-base"
+              >Check out Github</button
+            ></a
+          >
+        </div>
+      </div>
+      <!-- <div>
 				<Image src={logo} alt="three orange cirles connected by blue lines">
 			</div> -->
-		</section>
-		<section class="mt-20 md:mt-24 lg:mt-28">
-			<!-- <div class="absolute z-0 w-full">
+    </section>
+    <section class="mt-20 md:mt-24 lg:mt-28">
+      <!-- <div class="absolute z-0 w-full">
 				<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 100 10" preserveAspectRatio="none">
 					<polygon points="0 10,0 0,100 0" fill="#159987">
 					</polygon>
 				</svg>
 			</div> -->
-			<h2 class="text-5xl text-center relative z-10">An all-in-one online RDS solution.</h2>
-			<ul role="list" class="flex md:flex-row flex-col justify-between mt-4 sm:mt-8">
-				<ReasonsCard
-					title="Open Source"
-					body="o-RDS provides a completely open source solution allowing for budget use cases and continued community support."
-					image="/src/assets/images/open_source.png"
-				/>
-				<ReasonsCard
-					title="Easy to Use"
-					body="o-RDS provides a no frills solution to web RDS. Simply plug in the necessary parts and it'll work right out of the box."
-					image="/src/assets/images/easy.png"
-				/>
-				<ReasonsCard
-					title="Customizable"
-					body="Build o-RDS the way you want it to work. Change out or expand on parts to make it better fit your workflow."
-					image="/src/assets/images/modular.png"
-				/>
-				<!-- <ReasonsCard
+      <h2 class="text-5xl text-center relative z-10">
+        An all-in-one online RDS solution.
+      </h2>
+      <ul
+        role="list"
+        class="flex md:flex-row flex-col justify-between mt-4 sm:mt-8"
+      >
+        <ReasonsCard
+          title="Open Source"
+          body="o-RDS provides a completely open source solution allowing for budget use cases and continued community support."
+          image="/src/assets/images/open_source.png"
+        />
+        <ReasonsCard
+          title="Easy to Use"
+          body="o-RDS provides a no frills solution to web RDS. Simply plug in the necessary parts and it'll work right out of the box."
+          image="/src/assets/images/easy.png"
+        />
+        <ReasonsCard
+          title="Customizable"
+          body="Build o-RDS the way you want it to work. Change out or expand on parts to make it better fit your workflow."
+          image="/src/assets/images/modular.png"
+        />
+        <!-- <ReasonsCard
 					title="Fast"
 					body="Build o-RDS the way you want it to work. Change out or expand on parts to make it better fit your workflow."
 					image="../images/open_source.png"
 				/> -->
-			</ul>
-		</section>
-		<section class="mt-20 md:mt-24 lg:mt-28 flex flex-col items-center">
-			<h2 class="text-5xl text-center">Thoughtfully Crafted</h2>
-			<p class="mt-3 text-base text-center max-w-[660px]">o-RDS contains all the necessary functional and quality of life features to start building your survey right away and supports continuous integration of new features. It focuses on features for three groups: adminstrators, developers, and survey takers.</p>
-			<section class="mt-16 md:mt-20 lg:mt-24">
-				<h3 class="text-4xl">Administrator</h3>
-				<p class="max-w-[660px]">The experience of an adminstrator has been expertly crafted in order to provide tools you'll actually use and nothing more.</p>
-				<ul role="list" class="link-card-grid mt-4 sm:mt-8 md:grid-cols-2 grid-cols-1">
-					<FeatureCard
-					title="Dashboard"
-					body="Quickly view and access your surveys with the built-in dashboard."
-					imagePath="/src/assets/images/dashboard.png"
-					benefits={["Up to 25 surveys displayed at a time", "Badges to indicate survey status", "One click to edit or view your results"]}
-				/>
-					<FeatureCard
-					title="Survey Builder"
-					body="Develop your survey with a simple and fast survey builder."
-					imagePath="/src/assets/images/survey_builder.png"
-					benefits={["4 Built-in Questions", "Intuitive GUI Builder", "Live Survey Preview"]}
-				/>
-				<FeatureCard
-					title="Survey Management"
-					body="Easily manage surveys straight from the survey builder or view your results right in the dashboard."
-					imagePath="/src/assets/images/survey_management.png"
-					benefits={["Survey Checklist", "Extensive Settings to Customize", "Add Additional Editors", "Quick access to survey results"]}
-				/>
-				<FeatureCard
-					title="Referal Tracking"
-					body="Easily track the chain of referals and spend more time doing meaningful work."
-					imagePath="/src/assets/images/referal_tracking.png"
-					benefits={["Automatic Referal Tracking", "See the Depth of Chains"]}
-				/>
-				<FeatureCard
-					title="Automatic Payments"
-					body="With Tremendous integration, all rewards payments will be handled automatically."
-					imagePath="/src/assets/images/auto_payments.png"
-					benefits={["Never worry about payments"]}
-				/>
-				<FeatureCard
-					title="Survey Delivery Tool"
-					body="Publish your survey and it will automatically go live at its own dedicated URL."
-					imagePath="/src/assets/images/survey_delivery.png"
-					benefits={["One-Click Publishing", "Easy Link Sharing"]}
-				/>
-				</ul>
-			</section>
-			<section class="mt-16 md:mt-20 lg:mt-24">
-				<h3 class="text-4xl">Developer</h3>
-				<p class="max-w-[660px]">The plug and play nature of o-RDS provides ease of use for developers getting this project running.</p>
-				<ul role="list" class="link-card-grid mt-4 sm:mt-8 md:grid-cols-2 grid-cols-1">
-					<FeatureCard
-					title="Backend Proxy Server"
-					body="Keep your secrets hidden and enable authentification of users with the included proxy server."
-					imagePath="/src/assets/images/proxy_server.png"
-					benefits={["Enhanced Security"]}
-				/>
-				<FeatureCard
-					title="Modular No-SQL Database"
-					body="o-RDS comes with Firebase Integration but can modified to work with any No-SQL database."
-					imagePath="/src/assets/images/modular_database.png"
-					benefits={["Firebase integration", "No-SQL support"]}
-				/>
-				<FeatureCard
-					title="Implement Custom Questions"
-					body="You're not limited to the questions included in o-RDS. Easily plug in new questions using our modular question approach."
-					imagePath="/src/assets/images/custom_questions.png"
-					benefits={["No limits to what you can make", "Have as many or as little as you need"]}
-				/>
-				<FeatureCard
-					title="Easy Setup"
-					body="o-RDS is ready to be used right out of the box. Just add in API keys and set up your hosting and domain and you're good to go!"
-					imagePath="/src/assets/images/easy_setup.png"
-					benefits={["Plug and play", "Quick swap of keys"]}
-				/>
-				<FeatureCard
-					title="Tailwind CSS Integration"
-					body="o-RDS comes stock with Tailwind CSS integration meaning less time spent creating arbitrary classes."
-					imagePath="/src/assets/images/easy_setup.png"
-					benefits={["Quick to pick up", "Allows flexibility in CSS use"]}
-				/>
-				</ul>
-			</section>
-			<section class="mt-16 md:mt-20 lg:mt-24">
-				<h3 class="text-4xl">Survey Taker</h3>
-				<p class="max-w-[660px]">o-RDS provides a simple and user friendly experience.</p>
-				<ul role="list" class="link-card-grid mt-4 sm:mt-8 md:grid-cols-2 grid-cols-1">
-					<FeatureCard
-					title="Resume Later"
-					body="If something comes up and a user isn't able to finish a survey, they can use a continuation code provided by o-RDS."
-					imagePath="/src/assets/images/resume_later.png"
-					benefits={["No lost progress"]}
-				/>
-				<FeatureCard
-					title="Rewards Made Easy"
-					body="Integration with Tremendous means users will be able to safely recieve their rewards in a variety of manners."
-					imagePath="/src/assets/images/easy_rewards.png"
-					benefits={["Quickly recieve rewards", "Refer for more rewards", "Manage rewards in one place"]}
-				/>
-				<FeatureCard
-					title="Contact Administrators Quickly"
-					body="If a user becomes stuck or encounters and issue, they can use the built in contact feature to alert an administrator."
-					imagePath="/src/assets/images/contact.png"
-					benefits={["Conviently placed in the live survey", "Quick access to help"]}
-				/>
-				</ul>
-			</section>
-		</section>
-		<p>Icons By <a href="https://icons8.com/">Icons8</a></p>
-	</main>
+      </ul>
+    </section>
+    <section class="mt-20 md:mt-24 lg:mt-28 flex flex-col items-center">
+      <h2 class="text-5xl text-center">Thoughtfully Crafted</h2>
+      <p class="mt-3 text-base text-center max-w-[660px]">
+        o-RDS contains all the necessary functional and quality of life features
+        to start building your survey right away and supports continuous
+        integration of new features. It focuses on features for three groups:
+        adminstrators, developers, and survey takers.
+      </p>
+      <section class="mt-16 md:mt-20 lg:mt-24">
+        <h3 class="text-4xl">Administrator</h3>
+        <p class="max-w-[660px]">
+          The experience of an adminstrator has been expertly crafted in order
+          to provide tools you'll actually use and nothing more.
+        </p>
+        <ul
+          role="list"
+          class="link-card-grid mt-4 sm:mt-8 md:grid-cols-2 grid-cols-1"
+        >
+          <FeatureCard
+            title="Dashboard"
+            body="Quickly view and access your surveys with the built-in dashboard."
+            imagePath="/src/assets/images/dashboard.png"
+            benefits={[
+              "Up to 25 surveys displayed at a time",
+              "Badges to indicate survey status",
+              "One click to edit or view your results",
+            ]}
+          />
+          <FeatureCard
+            title="Survey Builder"
+            body="Develop your survey with a simple and fast survey builder."
+            imagePath="/src/assets/images/survey_builder.png"
+            benefits={[
+              "4 Built-in Questions",
+              "Intuitive GUI Builder",
+              "Live Survey Preview",
+            ]}
+          />
+          <FeatureCard
+            title="Survey Management"
+            body="Easily manage surveys straight from the survey builder or view your results right in the dashboard."
+            imagePath="/src/assets/images/survey_management.png"
+            benefits={[
+              "Survey Checklist",
+              "Extensive Settings to Customize",
+              "Add Additional Editors",
+              "Quick access to survey results",
+            ]}
+          />
+          <FeatureCard
+            title="Referal Tracking"
+            body="Easily track the chain of referals and spend more time doing meaningful work."
+            imagePath="/src/assets/images/referal_tracking.png"
+            benefits={["Automatic Referal Tracking", "See the Depth of Chains"]}
+          />
+          <FeatureCard
+            title="Automatic Payments"
+            body="With Tremendous integration, all rewards payments will be handled automatically."
+            imagePath="/src/assets/images/auto_payments.png"
+            benefits={["Never worry about payments"]}
+          />
+          <FeatureCard
+            title="Survey Delivery Tool"
+            body="Publish your survey and it will automatically go live at its own dedicated URL."
+            imagePath="/src/assets/images/survey_delivery.png"
+            benefits={["One-Click Publishing", "Easy Link Sharing"]}
+          />
+        </ul>
+      </section>
+      <section class="mt-16 md:mt-20 lg:mt-24">
+        <h3 class="text-4xl">Developer</h3>
+        <p class="max-w-[660px]">
+          The plug and play nature of o-RDS provides ease of use for developers
+          getting this project running.
+        </p>
+        <ul
+          role="list"
+          class="link-card-grid mt-4 sm:mt-8 md:grid-cols-2 grid-cols-1"
+        >
+          <FeatureCard
+            title="Backend Proxy Server"
+            body="Keep your secrets hidden and enable authentification of users with the included proxy server."
+            imagePath="/src/assets/images/proxy_server.png"
+            benefits={["Enhanced Security"]}
+          />
+          <FeatureCard
+            title="Modular No-SQL Database"
+            body="o-RDS comes with Firebase Integration but can modified to work with any No-SQL database."
+            imagePath="/src/assets/images/modular_database.png"
+            benefits={["Firebase integration", "No-SQL support"]}
+          />
+          <FeatureCard
+            title="Implement Custom Questions"
+            body="You're not limited to the questions included in o-RDS. Easily plug in new questions using our modular question approach."
+            imagePath="/src/assets/images/custom_questions.png"
+            benefits={[
+              "No limits to what you can make",
+              "Have as many or as little as you need",
+            ]}
+          />
+          <FeatureCard
+            title="Easy Setup"
+            body="o-RDS is ready to be used right out of the box. Just add in API keys and set up your hosting and domain and you're good to go!"
+            imagePath="/src/assets/images/easy_setup.png"
+            benefits={["Plug and play", "Quick swap of keys"]}
+          />
+          <FeatureCard
+            title="Tailwind CSS Integration"
+            body="o-RDS comes stock with Tailwind CSS integration meaning less time spent creating arbitrary classes."
+            imagePath="/src/assets/images/easy_setup.png"
+            benefits={["Quick to pick up", "Allows flexibility in CSS use"]}
+          />
+        </ul>
+      </section>
+      <section class="mt-16 md:mt-20 lg:mt-24">
+        <h3 class="text-4xl">Survey Taker</h3>
+        <p class="max-w-[660px]">
+          o-RDS provides a simple and user friendly experience.
+        </p>
+        <ul
+          role="list"
+          class="link-card-grid mt-4 sm:mt-8 md:grid-cols-2 grid-cols-1"
+        >
+          <FeatureCard
+            title="Resume Later"
+            body="If something comes up and a user isn't able to finish a survey, they can use a continuation code provided by o-RDS."
+            imagePath="/src/assets/images/resume_later.png"
+            benefits={["No lost progress"]}
+          />
+          <FeatureCard
+            title="Rewards Made Easy"
+            body="Integration with Tremendous means users will be able to safely recieve their rewards in a variety of manners."
+            imagePath="/src/assets/images/easy_rewards.png"
+            benefits={[
+              "Quickly recieve rewards",
+              "Refer for more rewards",
+              "Manage rewards in one place",
+            ]}
+          />
+          <FeatureCard
+            title="Contact Administrators Quickly"
+            body="If a user becomes stuck or encounters and issue, they can use the built in contact feature to alert an administrator."
+            imagePath="/src/assets/images/contact.png"
+            benefits={[
+              "Conviently placed in the live survey",
+              "Quick access to help",
+            ]}
+          />
+        </ul>
+      </section>
+    </section>
+    <p>Icons By <a href="https://icons8.com/">Icons8</a></p>
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		max-width: 80vw;
-		color: black;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		text-align: center;
-		margin-bottom: 2rem;
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		/* grid-template-columns: repeat(2, minmax(auto, 1fr)); */
-		justify-content: center;
-		gap: 2rem;
-		padding: 0;
-		max-width: 100%;
-	}
+  main {
+    margin: auto;
+    padding: 1rem;
+    max-width: 80vw;
+    color: black;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .astro-a {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 220px;
+    height: auto;
+    z-index: -1;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  .instructions code {
+    font-size: 0.8em;
+    font-weight: bold;
+    background: rgba(var(--accent-light), 12%);
+    color: rgb(var(--accent-light));
+    border-radius: 4px;
+    padding: 0.3em 0.4em;
+  }
+  .instructions strong {
+    color: rgb(var(--accent-light));
+  }
+  .link-card-grid {
+    display: grid;
+    /* grid-template-columns: repeat(2, minmax(auto, 1fr)); */
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    max-width: 100%;
+  }
 </style>
