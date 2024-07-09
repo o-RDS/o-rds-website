@@ -26,11 +26,11 @@ Currently there are 4 types of questions implemented in o-RDS. These include `Mu
 
 If you have multiple questions you can change the order of the questions. To do this, there are two arrows in the top right portion of a question. The `up` arrow moves the question up one spot, the `down` arrow moves the question down one spot.
 
-A button that is also in the top right of a question is the delete button. This button will remove the question from the survey forever. `If you accidently remove a question there is no way to recover it!`
+A button that is also in the top right of a question is the delete button. This button will remove the question from the survey forever. `If you accidentally remove a question there is no way to recover it!`
 
 ### Configuration Sidebar
 
-The `Configuration Sidebar` is where all question editing is done. There are two categories of options based on which question you have selected. All questions contain the `General` category. This category includes all options that every question will have including `Page Number`, `Required`, and the `Question Prompt`. `Page Number` changes which page a question will appear on during the survey. `Required` allows you to choose whether you want to make a question required or not. Finally, `Question Prompt` provides a place for you to add or edit your question's question. `Checkbox` questions currently don't have the ability to be required due to the current implemention, however this will be changed in the future.
+The `Configuration Sidebar` is where all question editing is done. There are two categories of options based on which question you have selected. All questions contain the `General` category. This category includes all options that every question will have including `Page Number`, `Required`, and the `Question Prompt`. `Page Number` changes which page a question will appear on during the survey. `Required` allows you to choose whether you want to make a question required or not. Finally, `Question Prompt` provides a place for you to add or edit your question's question. `Checkbox` questions currently don't have the ability to be required due to the current implementation, however this will be changed in the future.
 
 The other category that exists is the `Answers` category. This category is only available on `Checkbox` and `Multiple Choice` questions as the options included in it relate to the choices these questions possess. The answers category includes the fields `Number of Choices` and `Current Choices`. `Number of Choices` allows you to pick the number of choices you want for each question, while the `Current Choices` option allow you to edit your current choices.
 
@@ -54,7 +54,7 @@ If either one of the above requirements are not met, the publish button will be 
 The following are items that aren't required but are recommended:
 
 - **_A Researcher Message_** - This is a message typically used for an informed consent.
-- **_End of survey message_** - This message is helpful for thanking particpants and providing further instructions.
-- **_Researcher Phone Number_** - This is used in the contact button in a live survey. Without it, particpants may have trouble contacting you with questions or concerns.
-- **_Email_** - This is used in the contact button in a live survey. Without it, particpants may have trouble contacting you with questions or concerns.
-- **_Mail_** - This is used in the contact button in a live survey. Without it, particpants may have trouble contacting you with questions or concerns.
+- **_End of survey message_** - This message is helpful for thanking participants and providing further instructions.
+- **_Researcher Phone Number_** - This is used in the contact button in a live survey. Without it, participants may have trouble contacting you with questions or concerns.
+- **_Email_** - This is used in the contact button in a live survey. Without it, participants may have trouble contacting you with questions or concerns.
+- **_Mail_** - This is used in the contact button in a live survey. Without it, participants may have trouble contacting you with questions or concerns.

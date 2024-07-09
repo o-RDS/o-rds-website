@@ -49,7 +49,7 @@ A couple things to note regarding the fields:
 
 ### The Dispatch Function
 
-In any component that modifies a survey's configuration you will find a function dedicated to that change. Within that function will be a dispatch function. This dispatch function takes any changes that you give it and passes it to the reducer function. When creating functions that utilize this function we reccommend that you make the changes to a local copy of the survey configuration, then use that in the dispatch.
+In any component that modifies a survey's configuration you will find a function dedicated to that change. Within that function will be a dispatch function. This dispatch function takes any changes that you give it and passes it to the reducer function. When creating functions that utilize this function we recommend that you make the changes to a local copy of the survey configuration, then use that in the dispatch.
 
 There is only one required value in the object that you pass using the dispatch function: `type`. `Type` is required for the reducer to know what action should be completed. Without it you will get errors. Otherwise you can name any other fields you would like to dispatch.
 

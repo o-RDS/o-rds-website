@@ -14,4 +14,4 @@ The survey tiles shown upon loading the admin dashboard contain the survey name,
 
 ## The Results page
 
-The results page contains the all results from anyone who took your survey. o-RDS provides a built in method of viewing results, but it is reccomended to download your results as a CSV and use the software of your choice to analyze the results.
+The results page contains the all results from anyone who took your survey. o-RDS provides a built in method of viewing results, but it is recommended to download your results as a CSV and use the software of your choice to analyze the results.

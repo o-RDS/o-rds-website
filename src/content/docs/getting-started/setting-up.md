@@ -16,8 +16,8 @@ o-RDS comes with a built-in proxy server. All you need to do is add your API key
 
 ## 3. Deploying the applications
 
-While o-RDS can be run entirely from local computers, it functions best when deployed online. In order to acheive this, pick your provider of choice and follow the instructions provided by them. The o-RDS Team use Firebase to host the client and Railway to host the proxy server. We also reccomend purchasing a domain for your client.
+While o-RDS can be run entirely from local computers, it functions best when deployed online. In order to achieve this, pick your provider of choice and follow the instructions provided by them. The o-RDS Team use Firebase to host the client and Railway to host the proxy server. We also recommend purchasing a domain for your client.
 
 ## 4. Contributing to o-RDS
 
-o-RDS is an open-source project which means we invite anyone who makes improvements to contribute to the project! The project contains a `testing` branch. If you have develpoed something you would like to add to o-RDS please create a pull request to that branch and a maintainer will review. If the code added is demmed acceptable, the request will be approved.
+o-RDS is an open-source project which means we invite anyone who makes improvements to contribute to the project! The project contains a `testing` branch. If you have developed something you would like to add to o-RDS please create a pull request to that branch and a maintainer will review. If the code added is deemed acceptable, the request will be approved.

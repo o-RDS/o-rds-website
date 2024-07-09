@@ -14,7 +14,7 @@ For mobile phone verification, o-RDS currently supports:
 
     Twilio
 
-Below is a step-by-step guide detailiing how to setup o-RDS to work your selected payout and phone verification methods.
+Below is a step-by-step guide detailing how to setup o-RDS to work your selected payout and phone verification methods.
 
 ## Tremendous Step 0: Create an Account
 
@@ -28,23 +28,23 @@ Don't worry about adding funds just yet. Tremendous has a wonderful development 
 
 [Testflight](https://testflight.tremendous.com/) is a way for you to use Tremendous services in a development environment without worry of using any real money. You can think of Tremendous Testflight as an identical version of Tremendous which provides your account with $5000 that renews periodically. For the purposes of testing, we recommend strictly utilizing Testflight. Once o-RDS is prepared for production use, switch over your Bearer token and Tremendous URL environment variables (step 4).
 
-Click [HERE](https://developers.tremendous.com/docs/sandbox-environment) to get more informatin about Testflight.
+Click [HERE](https://developers.tremendous.com/docs/sandbox-environment) to get more information about Testflight.
 
 ## Tremendous Step 2: Create a Campaign
 
-Campaign templates will allow you to select which rewards you want to make available to your recepients, as well as design the look of the message your recepients receive. Below shows you how to navigate to create a campaign template:
+Campaign templates will allow you to select which rewards you want to make available to your recipients, as well as design the look of the message your recipients receive. Below shows you how to navigate to create a campaign template:
 
 ![Tremendous Create Campaign](../../../assets/images/Tremendous_Create_Campaign.jpg "Tremendous Create Campaign")
 
 ## Tremendous Step 3: Get your Bearer Token
 
-Bearer tokens are what Tremendous uses to authorize API calls. It is important that these keys remain secret. If you ever accidentaly expose your API key, be sure to quickly create a new one and remove any use of the old key from o-RDS. More information on what to do with this key is detailed in step 4.
+Bearer tokens are what Tremendous uses to authorize API calls. It is important that these keys remain secret. If you ever accidentally expose your API key, be sure to quickly create a new one and remove any use of the old key from o-RDS. More information on what to do with this key is detailed in step 4.
 
 ![Tremendous API Keys](../../../assets/images/Tremendous_API_Keys.jpg "Tremendous API Keys")
 
 ## Tremendous Step 4: Set Up Environment Variables
 
-Environment variables are used to keep secrets from being used as plaintext within the codebase. Envrionment files contain the key-value pairs that are associated with the secrets that need to be used in the code. o-RDS provides an empty environment variable file with only the keys, and all you need to do is get your values and fill out the file. Once .env.development is filled out with values, change the name to "**.env**" and gitignore will ignore it upon the next commit.
+Environment variables are used to keep secrets from being used as plaintext within the codebase. Environment files contain the key-value pairs that are associated with the secrets that need to be used in the code. o-RDS provides an empty environment variable file with only the keys, and all you need to do is get your values and fill out the file. Once .env.development is filled out with values, change the name to "**.env**" and gitignore will ignore it upon the next commit.
 
 In the case of Tremendous, the only values required in the .env file are:
 
@@ -89,4 +89,4 @@ Similar to Tremendous step 4, we are now ready to set up our environment variabl
 
 Unlike Tremendous, we don't need to worry about different server URLs for dev vs production, but it's here for consistency.
 
-We have provided a blank environment file ([.env.development](../.env.development)) which has all the necessary keys, but just needs the values. Once you've filled out all the neceesary fields, change the name to "**.env**" and gitignore will ignore it upon the next commit.
+We have provided a blank environment file ([.env.development](../.env.development)) which has all the necessary keys, but just needs the values. Once you've filled out all the necessary fields, change the name to "**.env**" and gitignore will ignore it upon the next commit.

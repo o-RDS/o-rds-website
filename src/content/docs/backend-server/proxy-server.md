@@ -63,7 +63,7 @@ This is an ExpressJS application, so there are many ways it can be hosted and pu
 
 ### 5: Moving to a production environment
 
-There may be a number of settings/variables in the .env file that are set a specific way during development/testing. Use the checklist below once you're ready to move to a production envrionment.
+There may be a number of settings/variables in the .env file that are set a specific way during development/testing. Use the checklist below once you're ready to move to a production environment.
 
 1. TESTING=false
 2. TREMENDOUS_BEARER_TOKEN and TREMENDOUS_SERVER shoud not be using the testflight environment
